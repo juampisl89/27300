@@ -179,6 +179,7 @@ body{
 .boxFooter{
 	align-self: center;
 	margin: 0.5rem;
+	transition: all 2s;
 }
 .boxFooter img{
 	display: flex;
@@ -196,4 +197,7 @@ body{
 	.boxFooter p{
 		font-size: 1.3rem;
 	}
+}
+.boxFooter:hover{
+	transform: scale(1.5,1.5);
 }
