@@ -85,9 +85,9 @@ body{
 	color: #818181;
 }
 /*Final del Header*/
-.cuerpoDePagina{
-	grid-area: cuerpoDePagina;
-	width: 100vw;
+#bgImg{
+	height:100vh ;
+	
 	background-image: url(../media/palacio.png) ;
 	background-position: center;
 	background-size: cover;
