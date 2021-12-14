@@ -7,197 +7,46 @@ padding: 0;
 body{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-.contenedorGrid{
-	display: grid;
-	grid-template-areas: 
-	"header"
-	"cuerpoDePagina"
-	"footer";
-	/*grid-gap: 2rem;*/
-	min-height: 100vh;
-	grid-template-rows: 
-	3rem auto auto;
 
-}
-@media all and (min-width: 768px){
-	.contenedorGrid{
-		grid-template-rows: 
-	5rem auto auto;
-	}
-}
-.header{
-	grid-area: header;
-	display: flex;
-	flex-direction: column;
-	top: 0;
-	width: 100%;
-	height: 3rem;
-	background-color: #f5f5f5d9;
-}
-@media all and (min-width: 768px){
-	.header{
-		flex-direction: row;
-		height: 5rem;
-		position: fixed;
-	}
-}
-.header .logo{
-	align-self: center;
-	height: 50%;
-}
-@media all and (min-width: 768px){
-	.header .logo{
-		align-self: flex-start;
-		height: 100%;
-	}
-}
-.header .logo img{
-	height: 100%;
-}
-.navBar{
-	list-style-type: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-content: center;
-	font-size: 0.7rem;
-	flex-wrap: wrap;
-}
-@media all and (min-width: 768px){
-	.navBar{
-		justify-content: flex-end;
-		font-size: 1rem;
-		align-self: center;
-    	width: 100%;
-    	margin-right: 1rem;
-
-	}
-}
-.navBar li{
-	margin: 0.5rem;
-}
-.navBar a{
-	color: #000;
-	text-decoration: none;
-	font-weight: 700;
-}
-.navBar .active a{
-	color: #818181;
-}
-/*Final del Header*/
-#bgImg{
-	height:100vh ;
-	
-	background-image: url(../media/palacio.png) ;
-	background-position: center;
-	background-size: cover;
+#banner{
+	background-image: url('../media/banner.jpg');
 	background-attachment: fixed;
-}
-.textoCentral{
-	align-self: center;
-	justify-self: center;
-	margin: 2rem 2rem;
-	/*height: 60vh;*/
-	background-color: #00000082;
-	grid-area: textoCentral;
-
-}
-@media all and (min-width: 768px){
-	.textoCentral{
-		margin: 2rem 2rem;
-		height: -webkit-fill-available;
-	}
-}
-.textoCentral p{
-	color: #fff;
-	padding: 8%;
-	box-sizing: border-box;
-	font-weight: 300;
-	font-size: 0.8rem;
-}
-@media all and (min-width: 768px){
-	.textoCentral p{
-		font-size: 1.2rem;
-	}
-}
-.mainQS{
-	width: 80%;
-	margin: auto;
-	display: grid;
-	grid-template-rows: auto ;
-	grid-template-areas: 
-	"textoCentral"
-	"imgCtral2";
-	
-}
-@media all and (min-width: 768px){
-	.mainQS{
-		margin: auto;
-		width: 70%;
-		grid-template-areas: 
-		"imgCtral2 textoCentral"
-		"imgCentral imgCentral";
-		grid-gap: 2rem;
-	}
-}	
-.imgCentral{
-	grid-area: imgCentral;
-	background-image: url(../media/equipo.jpg);
-	background-position: center;
-	background-size: cover;
-	height: 40rem;
-	margin: 2rem;
-
-}	/*COMO HAGO PARA QUE LA IMAGEN QUEDE CONTENIDA COMPLETAMENTE*/			
-.imgCtral2{
-	grid-area: imgCtral2;
-	width: 40vw;
-	height: 80vh;
-	background-image: url(../media/equipo_mob.jpg);
-	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: 2rem;
-	justify-self: center;
-}			
-
-
-/*FINAL DEL MAIN*/
-.footer{
-	grid-area: footer;
-	display: flex;
-	flex-direction: column;
+	background-size: cover;
 	width: 100vw;
-	background-color: #f5f5f5d9;
+	min-height: 300px;
+	height: 30vh;
+	position: relative;
 }
-@media all and (min-width: 768px){
-	.footer{
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
+#bgImg{
+	background-image: url(../media/logo.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	min-height: 400px;
+	height: 30vh;
 }
-.boxFooter{
-	align-self: center;
-	margin: 0.5rem;
-	transition: all 2s;
-}
-.boxFooter img{
-	display: flex;
-	flex-direction: column;
-	align-self: center;
+
+
+.imgCarousel{
+	min-height: 400px;
+	height: 50vh;
 	margin: auto;
-	height: 2rem;
-}
-.boxFooter p{
-	text-align: center;
-	font-size: 1rem;
 
 }
+.myTitles{
+	font-size: 2rem;
+}
+.mySubTitles{
+	font-size: 1.1rem;
+}
 @media all and (min-width: 768px){
-	.boxFooter p{
-		font-size: 1.3rem;
+	.myTitles{
+		font-size: 3rem;
 	}
+	.mySubTitles{
+		font-size: 1.25rem;
 }
-.boxFooter:hover{
-	transform: scale(1.5,1.5);
-}
+
