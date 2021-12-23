@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+@import "variables";
+
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#banner{
+	background-image: url('../media/banner.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100vw;
+	min-height: 300px;
+	height: 30vh;
+	position: relative;
+}
+#bgImg{
+	background-image: url(../media/logo.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	min-height: 400px;
+	height: 100vh;
+	@media all and (min-width: 992px){
+		height: 30vh;
+	}
+}
+
+.bgTexto{
+	background-color: $bgSoft;
+
+}
+.imgCarousel{
+	min-height: 400px;
+	height: 50vh;
+	margin: auto;
+}
+.myTitles{
+	font-size: 2rem;
+	@media all and (min-width: 768px){
+		font-size: 3rem;
+	}
+}
+.mySubTitles{
+	font-size: 1.1rem;
+	@media all and (min-width: 768px){
+		font-size: 1.25rem;
+	}
+}
+.card-cover{
+	img{
+		height: 50%;
+		transition: all 1s;
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}
