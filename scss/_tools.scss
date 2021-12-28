@@ -1,0 +1,11 @@
+@mixin titulos-parametros{
+	font-family: Open Sans Condensed, sans-serif;
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin: 2rem;
+}
+@mixin subtitulos-parametros{
+	font-family: Open Sans Condensed, sans-serif;
+	font-size: .85rem;
+	font-weight: 400;
+}

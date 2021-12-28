@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
-/* line 4, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+/* line 1, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/* line 8, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+/* line 5, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 #banner {
   background-image: url("../media/banner.jpg");
   background-attachment: fixed;
@@ -17,7 +17,7 @@ body {
   position: relative;
 }
 
-/* line 19, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+/* line 16, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 #bgImg {
   background-image: url(../media/logo.png);
   background-position: center;
@@ -29,57 +29,103 @@ body {
 }
 
 @media all and (min-width: 992px) {
-  /* line 19, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+  /* line 16, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
   #bgImg {
     height: 30vh;
   }
 }
 
-/* line 32, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+/* line 29, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .bgTexto {
   background-color: #f5f5f5d9;
 }
 
-/* line 36, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+/* line 33, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .imgCarousel {
   min-height: 400px;
   height: 50vh;
   margin: auto;
 }
 
-/* line 41, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+/* line 38, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .myTitles {
   font-size: 2rem;
 }
 
 @media all and (min-width: 768px) {
-  /* line 41, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+  /* line 38, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
   .myTitles {
     font-size: 3rem;
   }
 }
 
-/* line 47, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+/* line 44, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .mySubTitles {
   font-size: 1.1rem;
 }
 
 @media all and (min-width: 768px) {
-  /* line 47, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
+  /* line 44, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
   .mySubTitles {
     font-size: 1.25rem;
   }
 }
 
-/* line 54, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
-.card-cover img {
-  height: 50%;
-  transition: all 1s;
+/* line 50, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.card-cover {
+  height: 100%;
 }
 
-/* line 57, ../../Cuarta entrega/Cuarta entrega/scss/estilos.scss */
-.card-cover img:hover {
+/* line 52, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.card-cover img {
+  height: 100%;
+}
+
+/* line 57, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.card-body {
+  height: 3rem;
+}
+
+/* line 62, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.container .titulo-oficinas {
+  font-family: Open Sans Condensed, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2rem;
+}
+
+@media all and (min-width: 992px) {
+  /* line 62, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+  .container .titulo-oficinas {
+    font-size: 2rem;
+  }
+}
+
+/* line 68, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.container p.subtitulo-oficinas {
+  font-family: Open Sans Condensed, sans-serif;
+  font-size: .85rem;
+  font-weight: 400;
+}
+
+/* line 71, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.container .tarjeta {
+  transition: all 300ms;
+}
+
+/* line 73, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.container .tarjeta:hover {
   transform: scale(1.1);
+}
+
+/* line 79, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+footer li {
+  margin: 3px;
+}
+
+/* line 82, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+footer .container-fluid {
+  background-color: #f5f5f5d9;
 }
 
 /*# sourceMappingURL=estilos.css.map */
