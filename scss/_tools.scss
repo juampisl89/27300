@@ -9,3 +9,22 @@
 	font-size: .85rem;
 	font-weight: 400;
 }
+
+@mixin párrafo-descriptivo{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+}
+@mixin p-misión-visión{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem;
+	line-height: 1.2;
+	font-weight: 300;
+}
+@mixin t-misión-visión{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3.5rem;
+	font-weight: 300;
+	margin: 2rem;
+	margin-left: 0;
+}

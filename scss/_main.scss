@@ -12,6 +12,7 @@ body{
 	min-height: 300px;
 	height: 30vh;
 	position: relative;
+	font-weight: 300;
 }
 #bgImg{
 	background-image: url(../media/logo.png);
@@ -20,19 +21,23 @@ body{
 	background-repeat: no-repeat;
 	background-color: #fff;
 	min-height: 400px;
-	height: 100vh;
+	height: 30vh;
 	@media all and (min-width: 992px){
-		height: 30vh;
+		height: 50vh;
 	}
+	
 }
 
 .bgTexto{
 	background-color: $bgSoft;
 
 }
+.colorLogo{
+	background-color: $colorLogo;
+}
 .imgCarousel{
-	min-height: 400px;
-	height: 50vh;
+	
+	max-width: 80%;
 	margin: auto;
 }
 .myTitles{
@@ -69,6 +74,7 @@ body{
 		@include subtitulos-parametros;
 		}
 	.tarjeta{
+		
 		transition: all 300ms;
 		&:hover{
 			transform: scale(1.1);
@@ -82,4 +88,62 @@ footer{
 	.container-fluid{
 		background-color: $bgSoft;
 	}
+}
+
+/*PÁGINA MISIÓN VISIÓN*/
+.fraseAlberdi{
+	line-height: 1.6;
+}
+.bg-misión{
+	background-color: $colorLogo;
+	.columnaIzquierda{
+		padding: 70px 20px 60px 62px;
+		line-height: 1.2;
+		@include p-misión-visión
+		p{
+			color: white;
+		}
+	}
+	.columnaDerecha img{
+		height: 51%;
+		position: relative;
+		top: 90px;
+		left: 30px;
+	}
+}
+.título-sección{
+	@include t-misión-visión
+}
+.subtítulo{
+	@include titulos-parametros
+	margin: 0;
+}
+.bg-visión{
+	background-color: $colorLogo;
+	.columnaIzquierda{
+		padding: 70px 30px 60px 30px;
+		@include p-misión-visión
+		p{
+			color: white;
+		}
+	}
+}
+#misionVision{
+	background-image: url(../media/alberdi.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	height: 50vh	;
+	}
+
+//Quienes Somos
+
+#equipo{
+	min-height: 100vh;
+	background-color: #fff;
+
+}
+#equipo img{
+	height: 140px;
 }

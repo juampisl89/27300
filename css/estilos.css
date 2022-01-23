@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Quicksand:wght@300;400;500&display=swap");
 /* line 1, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 body {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -15,9 +16,10 @@ body {
   min-height: 300px;
   height: 30vh;
   position: relative;
+  font-weight: 300;
 }
 
-/* line 16, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 17, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 #bgImg {
   background-image: url(../media/logo.png);
   background-position: center;
@@ -25,68 +27,72 @@ body {
   background-repeat: no-repeat;
   background-color: #fff;
   min-height: 400px;
-  height: 100vh;
+  height: 30vh;
 }
 
 @media all and (min-width: 992px) {
-  /* line 16, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+  /* line 17, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
   #bgImg {
-    height: 30vh;
+    height: 50vh;
   }
 }
 
-/* line 29, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 31, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .bgTexto {
   background-color: #f5f5f5d9;
 }
 
-/* line 33, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
-.imgCarousel {
-  min-height: 400px;
-  height: 50vh;
-  margin: auto;
+/* line 35, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.colorLogo {
+  background-color: #74aadc;
 }
 
 /* line 38, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.imgCarousel {
+  max-width: 80%;
+  margin: auto;
+}
+
+/* line 43, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .myTitles {
   font-size: 2rem;
 }
 
 @media all and (min-width: 768px) {
-  /* line 38, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+  /* line 43, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
   .myTitles {
     font-size: 3rem;
   }
 }
 
-/* line 44, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 49, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .mySubTitles {
   font-size: 1.1rem;
 }
 
 @media all and (min-width: 768px) {
-  /* line 44, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+  /* line 49, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
   .mySubTitles {
     font-size: 1.25rem;
   }
 }
 
-/* line 50, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 55, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .card-cover {
   height: 100%;
 }
 
-/* line 52, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 57, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .card-cover img {
   height: 100%;
 }
 
-/* line 57, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 62, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .card-body {
   height: 3rem;
 }
 
-/* line 62, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 67, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .container .titulo-oficinas {
   font-family: Open Sans Condensed, sans-serif;
   font-size: 1.25rem;
@@ -95,37 +101,129 @@ body {
 }
 
 @media all and (min-width: 992px) {
-  /* line 62, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+  /* line 67, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
   .container .titulo-oficinas {
     font-size: 2rem;
   }
 }
 
-/* line 68, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 73, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .container p.subtitulo-oficinas {
   font-family: Open Sans Condensed, sans-serif;
   font-size: .85rem;
   font-weight: 400;
 }
 
-/* line 71, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 76, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .container .tarjeta {
   transition: all 300ms;
 }
 
-/* line 73, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 79, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 .container .tarjeta:hover {
   transform: scale(1.1);
 }
 
-/* line 79, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 85, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 footer li {
   margin: 3px;
 }
 
-/* line 82, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+/* line 88, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
 footer .container-fluid {
   background-color: #f5f5f5d9;
+}
+
+/*PÁGINA MISIÓN VISIÓN*/
+/* line 94, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.fraseAlberdi {
+  line-height: 1.6;
+}
+
+/* line 97, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.bg-misión {
+  background-color: #74aadc;
+}
+
+/* line 99, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.bg-misión .columnaIzquierda {
+  padding: 70px 20px 60px 62px;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+/* line 103, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.bg-misión .columnaIzquierda p {
+  color: white;
+}
+
+/* line 107, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.bg-misión .columnaDerecha img {
+  height: 51%;
+  position: relative;
+  top: 90px;
+  left: 30px;
+}
+
+/* line 114, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.título-sección {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 2rem;
+  margin-left: 0;
+}
+
+/* line 117, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.subtítulo {
+  font-family: Open Sans Condensed, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2rem;
+  margin: 0;
+}
+
+/* line 121, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.bg-visión {
+  background-color: #74aadc;
+}
+
+/* line 123, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.bg-visión .columnaIzquierda {
+  padding: 70px 30px 60px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+/* line 126, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+.bg-visión .columnaIzquierda p {
+  color: white;
+}
+
+/* line 131, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+#misionVision {
+  background-image: url(../media/alberdi.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  height: 50vh;
+}
+
+/* line 142, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+#equipo {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+/* line 147, ../../Cuarta entrega/Cuarta entrega/scss/_main.scss */
+#equipo img {
+  height: 140px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
